@@ -18,7 +18,7 @@ public class Grid : MonoBehaviour
         genGrid();
     }
 
-
+    //if you want to set grid size in the inspector
     [ContextMenu("Generate Grid")]
     public void genGrid(/*int width, int depth*/)
     {
@@ -38,6 +38,15 @@ public class Grid : MonoBehaviour
 
         }
 
+    }
+
+    //if you want to use code to set the grid size
+    public void genGrid(int width, int depth)
+    {
+        this.width = width;
+        this.depth = depth;
+        genGrid();
+    
     }
 
 }
